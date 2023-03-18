@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>HomeWork Page</title>
+    <script> let users ="anonimus" </script>
+</head>
+<body>
+    <script>
+
+        function resetGame(){
+            let users = prompt("Enter a your name","YOUR name please");
+            greeting.textContent = texts2 + users;
+        }
+        
+        let texts1 = "hello unnamed users ! please sign in";
+        let texts2 = "Congratulations ";
+
+        greeting = document.createElement('p');
+        greeting.textContent = texts1;
+        document.body.appendChild(greeting);
+
+        startButton = document.createElement('button');
+        startButton.textContent = 'Start new game';
+        document.body.appendChild(startButton);
+        startButton.addEventListener('click', resetGame);
+
+    </script>
+</body>
+</html>
